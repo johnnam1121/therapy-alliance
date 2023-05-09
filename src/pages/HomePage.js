@@ -27,17 +27,18 @@ import Footer from '../components/Footer';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#F5F5F5',
+      main: '#00a99d',
       light: '#eeeeee',
       dark: '#00a99d',
     },
     secondary: {
-      main: '#3fa9f5',
+      main: '#00a99d',
     },
   },
   typography: {
+    fontFamily: 'Roboto',
     h1: {
-      color: '#3fa9f5',
+      color: '#00a99d',
       fontSize: '10vh',
       '@media (max-width: 768px)': {
         fontSize: '10vw',
@@ -47,18 +48,19 @@ const theme = createTheme({
       color: 'blue',
     },
     h3: {
-      color: '#4ebaf4',
+      color: '#00a99d',
       fontSize: '1.5rem'
     },
     h4: {
       color: 'red',
     },
     h5: {
-      color: 'blue',
+      color: '#00a99d',
+      fontSize: '1.3rem',
     },
     h6: {
-      color: '#777777',
-      fontSize: '3vh',
+      color: '#eeeeee',
+      fontSize: '1.1rem',
       '@media (max-width: 768px)': {
         fontSize: '3vw',
       },
