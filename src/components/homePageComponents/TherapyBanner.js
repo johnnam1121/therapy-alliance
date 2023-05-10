@@ -1,42 +1,61 @@
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
+import { Box, Grid, Typography, Paper } from '@mui/material';
 import stock from '../../pictures/stockimg.jpg'
 
 export default function TherapyBanner() {
-  const containerStyle = { textAlign: 'center', mt: '5vh', pl: '10vw', pr: '10vw' }
-  const titleStyle = { textAlign: 'center', marginBottom: '2rem' };
-  const boldTitle = { textAlign: 'center', marginTop: '3vh', textDecoration: 'bold', fontSize: '10vh' };
+
+  const containerStyles = {
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    px: '3vw',
+  }
+
+  const paperStyles = {
+    transform: 'translateY(-10vh)',
+    my: '3vh',
+  }
 
   return (
-    <Box sx={{ flexGrow: 1, zIndex: '3' }}>
-      <Grid container sx={containerStyle} spacing={2}>
+    <Box>
+      <Grid container spacing={2} sx={containerStyles}>
         <Grid item xs={4} md={4}>
-          <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%' }} />
-          <Typography variant='h3'>
-            this is a test
-          </Typography>
-          <Typography variant='body 1'>
-            this is a test
-          </Typography>
+          <Paper sx={paperStyles}>
+            <div style={{ paddingLeft: '6vw', paddingRight: '6vw' }}>
+              <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%', marginTop: '3vh', marginBottom: '3vh' }} />
+              <Typography variant='h4' sx={{ mb: '2vh' }}>
+                Physical Therapy
+              </Typography>
+              <Typography variant='body 1'>
+                Improving mobility, range of motion, and strength
+              </Typography>
+            </div>
+          </Paper>
         </Grid>
         <Grid item xs={4} md={4}>
-          <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%' }} />
-          <Typography variant='h3'>
-            this is a test
-          </Typography>
-          <Typography variant='body 1'>
-            this is a test
-          </Typography>
+          <Paper sx={paperStyles}>
+            <div style={{ marginLeft: '6vw', paddingRight: '6vw' }}>
+              <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%', marginTop: '3vh', marginBottom: '3vh' }} />
+              <Typography variant='h4' sx={{ mb: '2vh' }}>
+                Physical Therapy
+              </Typography>
+              <Typography variant='body 1'>
+                Improving mobility, range of motion, and strength
+              </Typography>
+            </div>
+          </Paper>
         </Grid>
         <Grid item xs={4} md={4}>
-          <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%' }} />
-          <Typography variant='h3'>
-            this is a test
-          </Typography>
-          <Typography variant='body 1'>
-            this is a test
-          </Typography>
+          <Paper sx={paperStyles}>
+            <div style={{ marginLeft: '6vw', paddingRight: '6vw' }}>
+              <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%', marginTop: '3vh', marginBottom: '3vh' }} />
+              <Typography variant='h4' sx={{ mb: '2vh' }}>
+                Physical Therapy
+              </Typography>
+              <Typography variant='body 1'>
+                Improving mobility, range of motion, and strength
+              </Typography>
+            </div>
+          </Paper>
         </Grid>
       </Grid>
     </Box>

@@ -6,6 +6,7 @@ import TherapyBanner from '../components/homePageComponents/TherapyBanner';
 import WhyChooseUs from '../components/homePageComponents/WhyChooseUs';
 import Questions from '../components/homePageComponents/Questions';
 import Footer from '../components/Footer';
+import TopContact from '../components/TopContact';
 
 
 // #00a693 (a dark greenish-blue)
@@ -28,8 +29,8 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#00a99d',
-      light: '#eeeeee',
-      dark: '#00a99d',
+      light: '#f2f2f2',
+      dark: '#eeeeee',
     },
     secondary: {
       main: '#00a99d',
@@ -38,25 +39,27 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Roboto',
     h1: {
-      color: '#00a99d',
-      fontSize: '10vh',
+      color: '#eeeeee',
+      fontSize: '4rem',
       '@media (max-width: 768px)': {
         fontSize: '10vw',
       },
     },
     h2: {
+      fontSize: '3.25rem',
       color: 'blue',
     },
     h3: {
-      color: '#00a99d',
-      fontSize: '1.5rem'
+      fontSize: '2.5rem',
+      color: '#555555',
     },
     h4: {
+      fontSize: '1.75rem',
       color: 'red',
     },
     h5: {
+      fontSize: '1rem',
       color: '#00a99d',
-      fontSize: '1.3rem',
     },
     h6: {
       color: '#eeeeee',
@@ -85,11 +88,15 @@ export default function HomePage() {
         left: 0,
         right: 0,
       }}>
+        <TopContact />
         <Topbar />
         <Landing />
-        <WhyChooseUs />
-        <Questions />
-        <Footer />
+        <TherapyBanner />
+        {/* <WhyChooseUs /> */}
+        {/* 
+          <Questions />
+          <Footer /> 
+          */}
       </Box>
     </ThemeProvider>
   );

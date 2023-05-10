@@ -9,19 +9,18 @@ export default function WhyChooseUs() {
   const imgRow = { textAlign: 'center', pl: '7vw', pr: '7vw', alignItems: 'center', height: '90vh' }
 
   return (
-    <Box sx={{ backgroundColor: 'primary.main' }}>
+    <Box sx={{ backgroundColor: 'primary.light' }}>
       <Box sx={{
         flexGrow: 1,
-        backgroundColor: 'primary.main',
-        boxShadow: '0px 10px 15px -5px rgba(0,0,0,0.3), 0px -10px 15px -5px rgba(0,0,0,0.3), 0px 4px 6px -2px rgba(0,0,0,0.1)',
+        backgroundColor: 'primary.dark',
       }}>
         <Grid container sx={whyChooseUs} spacing={2}>
           <Grid item xs={false} sm={3} />
           <Grid item xs={12} sm={6}>
-            <Typography variant='h1' sx={{ textAlign: 'center', fontWeight: 'bold', mb: '5vh' }}>
+            <Typography variant='h1' sx={{ textAlign: 'center', fontWeight: 'bold', mb: '5vh', color: '#333333' }}>
               Why Choose Us
             </Typography>
-            <Typography variant='h6' sx={{ textAlign: 'center', fontWeight: 'bold' }}>
+            <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold' }}>
               Here at TD Therapy Alliance, we take pride in developing our staff in order to
               provide the best quality services for our patients
             </Typography>
