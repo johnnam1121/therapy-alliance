@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/thearpy-alliance/static/css/main.31d6cfe0.css",
+    "main.js": "/thearpy-alliance/static/js/main.ac87155f.js",
+    "static/media/handshake.jpg": "/thearpy-alliance/static/media/handshake.9f0a44af48b9f215f3a5.jpg",
+    "static/media/physicalTherapy.jpeg": "/thearpy-alliance/static/media/physicalTherapy.38c742ea5b7a254e2b5b.jpeg",
+    "static/media/stockimg.jpg": "/thearpy-alliance/static/media/stockimg.ad7667bf20e367e4cae8.jpg",
+    "static/media/shapes.png": "/thearpy-alliance/static/media/shapes.87b5d6245e6f869a8608.png",
+    "static/media/stockColored.jpeg": "/thearpy-alliance/static/media/stockColored.ad4e39bf89dd55409e0c.jpeg",
+    "static/media/logo.png": "/thearpy-alliance/static/media/logo.1e53f9624b0b478dc3d1.png",
+    "index.html": "/thearpy-alliance/index.html",
+    "main.ac87155f.js.map": "/thearpy-alliance/static/js/main.ac87155f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.ac87155f.js"
+  ]
+}
