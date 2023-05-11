@@ -80,9 +80,7 @@ const theme = createTheme({
 export default function HomePage() {
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{
-        backgroundColor: theme.palette.primary.main,
-      }}>
+      <Box sx={{ backgroundColor: theme.palette.primary.main }}>
         <TopContact />
         <Topbar />
         <Landing />
