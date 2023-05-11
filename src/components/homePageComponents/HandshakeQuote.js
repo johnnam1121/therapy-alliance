@@ -1,6 +1,6 @@
-import React from 'react'
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
-import handshake from '../../pictures/handshake.jpg'
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
+import React from 'react';
+import handshake from '../../pictures/handshake.jpg';
 
 export default function HandshakeQuote() {
   const isMobile = useMediaQuery('(max-width:768px)');

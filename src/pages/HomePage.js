@@ -1,13 +1,13 @@
-import { Container, Box } from '@mui/material'
-import { ThemeProvider, createTheme } from '@mui/material/styles'
-import Topbar from '../components/Topbar'
-import Landing from '../components/homePageComponents/Landing';
-import TherapyBanner from '../components/homePageComponents/TherapyBanner';
-import WhyChooseUs from '../components/homePageComponents/WhyChooseUs';
-import Questions from '../components/homePageComponents/Questions';
+import { Box } from '@mui/material';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Footer from '../components/Footer';
 import TopContact from '../components/TopContact';
+import Topbar from '../components/Topbar';
 import HandshakeQuote from '../components/homePageComponents/HandshakeQuote';
+import Landing from '../components/homePageComponents/Landing';
+import Questions from '../components/homePageComponents/Questions';
+import TherapyBanner from '../components/homePageComponents/TherapyBanner';
+import WhyChooseUs from '../components/homePageComponents/WhyChooseUs';
 
 
 // #00a693 (a dark greenish-blue)

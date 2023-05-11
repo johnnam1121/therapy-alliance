@@ -1,5 +1,4 @@
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 
 export default function Questions() {
   const isMobile = useMediaQuery('(max-width:768px)');

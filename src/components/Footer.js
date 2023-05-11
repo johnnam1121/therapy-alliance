@@ -1,9 +1,8 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../pictures/logo.png'
 
 export default function Footer() {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -18,16 +17,20 @@ export default function Footer() {
     mt: '4vh',
     mb: '2vh',
     textAlign: 'center',
-    color: '#eeeeee',
+    color: '#FFFFFF',
     textDecoration: 'underline'
   }
   const menuText = {
     textAlign: 'center',
     color: '#eeeeee',
   }
-  const menuIcons = {
+  const iconStyles = {
+    boxShadow: '0 0 2px rgba(0, 0, 0, 0.3)',
+    color: '#eeeeee',
     fontSize: isMobile ? '3rem' : '2rem',
-  }
+    mr: '1vw',
+    borderRadius: '30%'
+  };
 
   return (
     <Box>
@@ -35,7 +38,7 @@ export default function Footer() {
         <Grid item xs={12} md={3} >
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
             {/* <img src={logo} alt='logo' style={{ height: '5vh', backgroundColor: 'rgba(0,0,0,0.25)', borderRadius: '50%', }} /> */}
-            <Typography variant='h4' sx={{ mt: '4vh', mb: '2vh', textAlign: 'center', color: '#eeeeee', textDecoration: 'underline' }}>
+            <Typography variant='h4' sx={{ mt: '4vh', mb: '2vh', textAlign: 'center', color: '#FFFFFF', textDecoration: 'underline' }}>
               TD Therapy Alliance
             </Typography>
           </Box>
@@ -74,10 +77,10 @@ export default function Footer() {
             Social Media
           </Typography>
           <Box sx={menuText}>
-            <LinkedInIcon sx={menuIcons} />
-            <InstagramIcon sx={menuIcons} />
-            <InstagramIcon sx={menuIcons} />
-            <InstagramIcon sx={menuIcons} />
+            <LinkedInIcon sx={iconStyles} />
+            <InstagramIcon sx={iconStyles} />
+            <InstagramIcon sx={iconStyles} />
+            <InstagramIcon sx={iconStyles} />
           </Box>
           <Typography variant='h4' sx={menuTitles}>
             Some Useful Information

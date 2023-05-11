@@ -1,5 +1,5 @@
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
-import stock from '../../pictures/stockimg.jpg'
+import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
+import stock from '../../pictures/stockimg.jpg';
 
 export default function WhyChooseUs() {
   const isMobile = useMediaQuery('(max-width:768px)');

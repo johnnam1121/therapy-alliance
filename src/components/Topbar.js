@@ -1,8 +1,8 @@
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Box, Button, CssBaseline, IconButton, Menu, MenuItem, Typography, useMediaQuery } from '@mui/material';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../pictures/logo.png'
-import MenuIcon from '@mui/icons-material/Menu';
+import logo from '../pictures/logo.png';
 
 export default function Topbar() {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -46,7 +46,7 @@ export default function Topbar() {
           TD Therapy Alliance
         </Typography>
         <Box sx={{ display: { xs: "none", sm: "block" }, }}>
-          <Button component={Link} to="/Home" sx={linkStyles}>Home</Button>
+          <Button component={Link} to="/" sx={linkStyles}>Home</Button>
           <Button component={Link} to="/About" sx={linkStyles}>About</Button>
           <Button component={Link} to="/Projects" sx={linkStyles}>About</Button>
           <Button component={Link} to="/Experience" sx={linkStyles}>About</Button>

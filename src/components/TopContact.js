@@ -1,9 +1,9 @@
-import React from 'react';
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import { Box, CssBaseline, Grid, Typography, useMediaQuery } from '@mui/material';
+import React from 'react';
 
 export default function TopContact() {
   const isMobile = useMediaQuery('(max-width:768px)');

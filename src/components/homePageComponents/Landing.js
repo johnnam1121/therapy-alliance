@@ -1,7 +1,4 @@
-import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
-import stock from '../../pictures/stockimg.jpg'
-import handshake from '../../pictures/handshake.jpg'
-import shapes from '../../pictures/shapes.png'
+import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
 
 export default function Landing() {
   const isMobile = useMediaQuery('(max-width:768px)');
