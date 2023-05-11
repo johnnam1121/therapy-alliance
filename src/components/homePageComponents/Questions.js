@@ -1,7 +1,9 @@
-import { Box, Container, Grid, List, ListItem, Typography, Button } from '@mui/material';
+import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function Questions() {
+  const isMobile = useMediaQuery('(max-width:768px)');
+
   const stockColored = require('../../pictures/stockColored.jpeg');
   const containerStyle = {
     position: 'relative',
@@ -22,7 +24,7 @@ export default function Questions() {
         <Grid container spacing={2}>
           <Grid item xs={1} md={1} />
           <Grid item xs={10} md={10} sx={{ mt: '4vh' }}>
-            <Typography variant='h1' sx={{ textAlign: 'center', color: '#ffffff' }}>
+            <Typography variant='h1' sx={{ textAlign: 'center', color: '#ffffff', fontSize: '3.25rem' }}>
               Questions? <a href="google.com" style={{ color: '#000000' }}>Contact Us</a>
             </Typography>
           </Grid>

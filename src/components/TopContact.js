@@ -1,21 +1,49 @@
-import React from 'react'
-import { MenuIcon, useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
+import React from 'react';
+import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 
 export default function TopContact() {
+  const isMobile = useMediaQuery('(max-width:768px)');
+  const iconStyles = {
+    boxShadow: '0 0 2px rgba(0, 0, 0, 0.3)',
+    color: '#eeeeee',
+    fontSize: '1.75rem',
+    mr: '1vw',
+    borderRadius: '30%'
+  };
+
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'space-between', bgColor: 'primary.main', minHeight: '8vh', px: '10vw' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        bgColor: 'primary.main',
+        minHeight: '6vh',
+        px: isMobile ? '1vw' : '10vw',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+      }}
+    >
       <CssBaseline />
-      <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
-        <LinkedInIcon sx={{ boxShadow: '0 0 3px rgba(0, 0, 0, 0.3)', color: '#eeeeee', fontSize: '2rem', mr: '1vw' }} />
-        <InstagramIcon sx={{ boxShadow: '0 0 3px rgba(0, 0, 0, 0.3)', color: '#eeeeee', fontSize: '2rem' }} />
-      </div>
-      <Typography variant='h6' sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
-        <EmailIcon sx={{ boxShadow: '0 0 3px rgba(0, 0, 0, 0.3)' }} />&nbsp; someemail@gmail.com &nbsp; <LocalPhoneIcon sx={{ boxShadow: '0 0 3px rgba(0, 0, 0, 0.3)', marginLeft: '0.5rem' }} /> &nbsp; (123) 456-7890
-      </Typography>
+      <Grid container alignItems="center" justifyContent="flex-end">
+        <Grid item xs={6} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
+          <LinkedInIcon sx={iconStyles} />
+          <LinkedInIcon sx={iconStyles} />
+          <LinkedInIcon sx={iconStyles} />
+          <InstagramIcon sx={iconStyles} />
+        </Grid>
+        <Grid item xs={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+          <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
+            <EmailIcon sx={iconStyles} />
+            <Box sx={{ mr: '1vw', display: { xs: "none", sm: "block" } }}>someemail@gmail.com</Box>
+            <LocalPhoneIcon sx={iconStyles} />
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>(123) 456-7890</Box>
+          </Typography>
+        </Grid>
+      </Grid>
     </Box>
-  )
+  );
 }

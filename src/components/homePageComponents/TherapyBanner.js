@@ -1,7 +1,8 @@
-import { Box, Grid, Typography, Paper } from '@mui/material';
+import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
 import stock from '../../pictures/stockimg.jpg'
 
 export default function TherapyBanner() {
+  const isMobile = useMediaQuery('(max-width:768px)');
 
   const containerStyles = {
     justifyContent: 'center',
@@ -14,13 +15,13 @@ export default function TherapyBanner() {
   const paperStyles = {
     transform: 'translateY(-8vh)',
     backgroundColor: 'primary.dark',
-    mb: '10vh',
+    mb: isMobile ? '0vh' : '10vh',
   }
 
   return (
     <Box>
       <Grid container spacing={8} sx={containerStyles}>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <Paper sx={paperStyles}>
             <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%', marginTop: '5vh', marginBottom: '3vh' }} />
             <div style={{ marginInline: '3vw' }}>
@@ -35,7 +36,7 @@ export default function TherapyBanner() {
             </div>
           </Paper>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <Paper sx={paperStyles}>
             <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%', marginTop: '5vh', marginBottom: '3vh' }} />
             <div style={{ marginInline: '3vw' }}>
@@ -50,7 +51,7 @@ export default function TherapyBanner() {
             </div>
           </Paper>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <Paper sx={paperStyles}>
             <img src={stock} alt='stock image' style={{ height: '15vh', borderRadius: '50%', marginTop: '5vh', marginBottom: '3vh' }} />
             <div style={{ marginInline: '3vw' }}>

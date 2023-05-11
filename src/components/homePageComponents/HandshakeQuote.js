@@ -1,10 +1,12 @@
 import React from 'react'
-import { Box, Container, Grid, List, ListItem, Typography, Button } from '@mui/material';
+import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
 import handshake from '../../pictures/handshake.jpg'
 
 export default function HandshakeQuote() {
+  const isMobile = useMediaQuery('(max-width:768px)');
+
   const imageStyles = {
-    height: '80vh',
+    height: isMobile ? '50vh' : '80vh',
     borderRadius: '20%',
   }
 
@@ -14,8 +16,8 @@ export default function HandshakeQuote() {
         <Grid xs={12} sm={6} sx={{ display: 'flex', justifyContent: 'center', my: '5vh' }}>
           <img src={handshake} alt='handshake photo' style={imageStyles} />
         </Grid>
-        <Grid xs={12} sm={6}>
-          <Typography variant='h3' sx={{ mt: '5vh', mb: '3vh' }}>
+        <Grid xs={12} sm={6} sx={{ mb: isMobile ? '10vh' : '0' }}>
+          <Typography variant='h3' sx={{ mt: isMobile ? '0' : '5vh', mb: '3vh' }}>
             some text here
           </Typography>
           <Typography variant='h5' sx={{ color: '#777777' }}>

@@ -5,7 +5,7 @@ import logo from '../pictures/logo.png'
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Topbar() {
-  const isMobile = useMediaQuery('(max-width:600px)');
+  const isMobile = useMediaQuery('(max-width:768px)');
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
@@ -16,38 +16,40 @@ export default function Topbar() {
     setAnchorEl(null);
   };
 
+  const linkStyles = {
+    zIndex: 3,
+    color: '#000000',
+    '&:hover': { backgroundColor: '#f36523' }
+  }
+
+  const boldName = {
+    flexGrow: '1',
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    fontSize: '1.25rem',
+  }
+
   return (
     <Box sx={{
       backgroundColor: 'primary.light',
-      pl: '10vw',
-      pr: '9vw',
+      px: isMobile ? '1vw' : '10vw',
       top: 0,
       position: 'sticky',
       zIndex: 10,
     }}>
       <CssBaseline />
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', minHeight: '8vh' }}>
-        <IconButton
-          size="large"
-          edge="start"
-          color='inherit'
-          aria-label="menu"
-          component={Link} to="/"
-        >
-          <img src={logo} height={'25vw'} />
+        <IconButton size="large" edge="start" color='inherit' aria-label="menu" component={Link} to="/">
+          <img src={logo} alt='logo' height={'25vw'} />
         </IconButton>
-        <Typography
-          variant="h5"
-          component="div"
-          sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-        >
-          Therapy Alliance
+        <Typography variant="h5" component="div" sx={boldName}>
+          TD Therapy Alliance
         </Typography>
         <Box sx={{ display: { xs: "none", sm: "block" }, }}>
-          <Button component={Link} to="/Home" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>Home</Button>
-          <Button component={Link} to="/About" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>About</Button>
-          <Button component={Link} to="/Projects" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>About</Button>
-          <Button component={Link} to="/Experience" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>About</Button>
+          <Button component={Link} to="/Home" sx={linkStyles}>Home</Button>
+          <Button component={Link} to="/About" sx={linkStyles}>About</Button>
+          <Button component={Link} to="/Projects" sx={linkStyles}>About</Button>
+          <Button component={Link} to="/Experience" sx={linkStyles}>About</Button>
         </Box>
         {isMobile && (
           <div>
@@ -61,6 +63,7 @@ export default function Topbar() {
             >
               <MenuIcon />
             </IconButton>
+            {/* note to self. menu code is from mui documentation */}
             <Menu
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}

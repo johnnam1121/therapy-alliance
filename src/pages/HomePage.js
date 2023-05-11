@@ -66,7 +66,7 @@ const theme = createTheme({
       color: '#eeeeee',
       fontSize: '1.1rem',
       '@media (max-width: 768px)': {
-        fontSize: '3vw',
+        fontSize: '0.75rem',
       },
 
     },

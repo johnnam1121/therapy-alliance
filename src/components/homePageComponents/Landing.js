@@ -1,15 +1,22 @@
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
+import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
 import stock from '../../pictures/stockimg.jpg'
 import handshake from '../../pictures/handshake.jpg'
 import shapes from '../../pictures/shapes.png'
 
 export default function Landing() {
-  const buttonStyles = { mt: '7vh', display: 'block', ml: 'auto', mr: 'auto', color: '#ffffff', backgroundColor: '#00a99d', '&:hover': { backgroundColor: '#f36523' }, fontSize: '1.5vw' }
+  const isMobile = useMediaQuery('(max-width:768px)');
+
+  const buttonStyles = {
+    mt: '7vh',
+    display: 'block',
+    mx: 'auto',
+    color: '#ffffff',
+    backgroundColor: '#00a99d',
+    '&:hover': { backgroundColor: '#f36523' },
+    fontSize: isMobile ? '4vw' : '1.5vw',
+    borderRadius: '10%'
+  }
+
   const backgroundPhoto = require('../../pictures/physicalTherapy.jpeg');
   const background = {
     position: 'relative',
