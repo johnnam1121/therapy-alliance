@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/therapy-alliance/static/css/main.31d6cfe0.css",
-    "main.js": "/therapy-alliance/static/js/main.11796235.js",
+    "main.js": "/therapy-alliance/static/js/main.a79936bb.js",
     "static/js/787.7ac85b82.chunk.js": "/therapy-alliance/static/js/787.7ac85b82.chunk.js",
     "static/media/handshake.jpg": "/therapy-alliance/static/media/handshake.9f0a44af48b9f215f3a5.jpg",
     "static/media/therapyStock.jpeg": "/therapy-alliance/static/media/therapyStock.375f2f71085e8c552f81.jpeg",
     "static/media/physicalTherapy.jpeg": "/therapy-alliance/static/media/physicalTherapy.38c742ea5b7a254e2b5b.jpeg",
+    "static/media/hand.jpeg": "/therapy-alliance/static/media/hand.58641ff987803c0c02ee.jpeg",
+    "static/media/David.jpg": "/therapy-alliance/static/media/David.9c5be5bb2390e476169a.jpg",
     "static/media/stockimg.jpg": "/therapy-alliance/static/media/stockimg.ad7667bf20e367e4cae8.jpg",
-    "static/media/shapes.png": "/therapy-alliance/static/media/shapes.87b5d6245e6f869a8608.png",
+    "static/media/Tony.jpg": "/therapy-alliance/static/media/Tony.8c177ab57e6b1cf3b912.jpg",
     "static/media/stockColored.jpeg": "/therapy-alliance/static/media/stockColored.ad4e39bf89dd55409e0c.jpeg",
     "static/media/logo.png": "/therapy-alliance/static/media/logo.1e53f9624b0b478dc3d1.png",
     "index.html": "/therapy-alliance/index.html",
-    "main.11796235.js.map": "/therapy-alliance/static/js/main.11796235.js.map",
+    "main.a79936bb.js.map": "/therapy-alliance/static/js/main.a79936bb.js.map",
     "787.7ac85b82.chunk.js.map": "/therapy-alliance/static/js/787.7ac85b82.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.11796235.js"
+    "static/js/main.a79936bb.js"
   ]
 }
