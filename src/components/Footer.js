@@ -5,9 +5,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const linkStyles = {
+    display: 'block',
+    textAlign: 'center',
+    color: '#eeeeee',
+    margin: '1vh 0',
+  };
+
   return (
-    <Container maxWidth={false} sx={{ backgroundColor: 'primary.dark' }}>
-      <Grid container spacing={2}>
+    <Box>
+      <Grid container spacing={2} sx={{ backgroundColor: 'primary.main' }}>
         <Grid item xs={12} md={4}>
           <Typography variant='h6' sx={{ mt: '4vh', mb: '2vh', textAlign: 'center', color: '#eeeeee' }}>
             TD Therapy Alliance
@@ -17,17 +24,16 @@ export default function Footer() {
             Spring, TX, 77373<br />
             Mail: TBD<br />
             Tel: TBD<br />
-            ©2023 John Nam. All Rights Reserved.
           </Typography>
         </Grid>
         <Grid item xs={12} md={2} sx={{ textAlign: 'center', color: '#eeeeee' }}>
           <Typography variant='h6' sx={{ mt: '4vh', mb: '2vh', textAlign: 'center', color: '#eeeeee' }}>
             Menu
           </Typography>
-          <Typography component={Link} to="/" sx={{ textAlign: 'center', color: '#eeeeee' }}>Home</Typography><br />
-          <Typography component={Link} to="/" sx={{ textAlign: 'center', color: '#eeeeee' }}>About</Typography><br />
-          <Typography component={Link} to="/" sx={{ textAlign: 'center', color: '#eeeeee' }}>Service</Typography><br />
-          <Typography component={Link} to="/" sx={{ textAlign: 'center', color: '#eeeeee' }}>Contact</Typography><br />
+          <Typography component={Link} to="/" sx={linkStyles}>Home</Typography>
+          <Typography component={Link} to="/" sx={linkStyles}>About</Typography>
+          <Typography component={Link} to="/" sx={linkStyles}>Service</Typography>
+          <Typography component={Link} to="/" sx={linkStyles}>Contact</Typography>
         </Grid>
         <Grid item xs={12} md={2}>
           <Typography variant='h6' sx={{ mt: '4vh', mb: '2vh', textAlign: 'center', color: '#eeeeee' }}>
@@ -62,6 +68,11 @@ export default function Footer() {
           </Box>
         </Grid>
       </Grid>
-    </Container>
+      <Box sx={{ backgroundColor: '#008e82', minHeight: '5vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', flexWrap: 'wrap' }}>
+        <Typography variant='body1' sx={{ color: '#eeeeee' }}>
+          ©2023 John Nam. All Rights Reserved.
+        </Typography>
+      </Box>
+    </Box>
   )
 }

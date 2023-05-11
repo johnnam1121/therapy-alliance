@@ -7,6 +7,7 @@ import WhyChooseUs from '../components/homePageComponents/WhyChooseUs';
 import Questions from '../components/homePageComponents/Questions';
 import Footer from '../components/Footer';
 import TopContact from '../components/TopContact';
+import HandshakeQuote from '../components/homePageComponents/HandshakeQuote';
 
 
 // #00a693 (a dark greenish-blue)
@@ -55,7 +56,7 @@ const theme = createTheme({
     },
     h4: {
       fontSize: '1.75rem',
-      color: 'red',
+      color: '#00a99d',
     },
     h5: {
       fontSize: '1rem',
@@ -81,22 +82,15 @@ export default function HomePage() {
     <ThemeProvider theme={theme}>
       <Box sx={{
         backgroundColor: theme.palette.primary.main,
-        minHeight: '100vh',
-        position: "absolute",
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
       }}>
         <TopContact />
         <Topbar />
         <Landing />
         <TherapyBanner />
-        {/* <WhyChooseUs /> */}
-        {/* 
-          <Questions />
-          <Footer /> 
-          */}
+        <WhyChooseUs />
+        <Questions />
+        <HandshakeQuote />
+        <Footer />
       </Box>
     </ThemeProvider>
   );

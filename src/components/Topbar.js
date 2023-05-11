@@ -17,9 +17,16 @@ export default function Topbar() {
   };
 
   return (
-    <Box sx={{ backgroundColor: 'primary.light' }}>
+    <Box sx={{
+      backgroundColor: 'primary.light',
+      pl: '10vw',
+      pr: '9vw',
+      top: 0,
+      position: 'sticky',
+      zIndex: 10,
+    }}>
       <CssBaseline />
-      <Toolbar sx={{ justifyContent: 'space-between' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', minHeight: '8vh' }}>
         <IconButton
           size="large"
           edge="start"
@@ -36,7 +43,7 @@ export default function Topbar() {
         >
           Therapy Alliance
         </Typography>
-        <Box sx={{ display: { xs: "none", sm: "block" } }}>
+        <Box sx={{ display: { xs: "none", sm: "block" }, }}>
           <Button component={Link} to="/Home" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>Home</Button>
           <Button component={Link} to="/About" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>About</Button>
           <Button component={Link} to="/Projects" sx={{ zIndex: 3, color: '#000000', '&:hover': { backgroundColor: '#f36523' } }}>About</Button>
@@ -93,7 +100,7 @@ export default function Topbar() {
             </Menu>
           </div>
         )}
-      </Toolbar>
+      </Box>
     </Box>
   );
 }

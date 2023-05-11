@@ -2,13 +2,13 @@ import { Box, Container, Grid, List, ListItem, Typography, Button } from '@mui/m
 import { Link } from 'react-router-dom';
 
 export default function Questions() {
-  const stars = require('../../pictures/stocktherapy.jpeg');
+  const stockColored = require('../../pictures/stockColored.jpeg');
   const containerStyle = {
     position: 'relative',
     padding: 0,
     overflow: 'hidden',
     minHeight: '30vh',
-    background: `url(${stars})`,
+    background: `url(${stockColored})`,
     backgroundSize: 'cover',
     backgroundPosition: 'top',
     backgroundAttachment: 'fixed',
@@ -27,11 +27,6 @@ export default function Questions() {
             </Typography>
           </Grid>
         </Grid>
-      </Box>
-      <Box sx={{ position: 'relative', height: '15vh', backgroundColor: 'primary.main', display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', pr: '5vw', pb: '3vh' }}>
-        <Typography style={{ fontFamily: "Lucida Calligraphy", }}>
-          "Beyond Recover, Towards Optimal Health: Our Vision For Therapy"
-        </Typography>
       </Box>
     </Box>
   );

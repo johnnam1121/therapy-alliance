@@ -1,12 +1,16 @@
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import { Box, Container, Grid, List, ListItem, Typography, Button } from '@mui/material';
 import stock from '../../pictures/stockimg.jpg'
 
 export default function WhyChooseUs() {
-  const whyChooseUs = { textAlign: 'center', height: '40vh', alignItems: 'center' };
-  const imgRow = { textAlign: 'center', pl: '7vw', pr: '7vw', alignItems: 'center', height: '90vh' }
+  const whyChooseUs = {
+    textAlign: 'center',
+    minHeight: '45vh',
+    alignItems: 'center',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15)',
+  };
+  const imgRow = { textAlign: 'center', px: '7vw', alignItems: 'center', minHeight:'70vh' }
+
+  const buttonStyles = { color: '#ffffff', backgroundColor: '#00a99d', '&:hover': { backgroundColor: '#f36523' }, fontSize: '1.25vw', mb:'5vh' }
 
   return (
     <Box sx={{ backgroundColor: 'primary.light' }}>
@@ -20,7 +24,7 @@ export default function WhyChooseUs() {
             <Typography variant='h1' sx={{ textAlign: 'center', fontWeight: 'bold', mb: '5vh', color: '#333333' }}>
               Why Choose Us
             </Typography>
-            <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold' }}>
+            <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold', mb: '5vh' }}>
               Here at TD Therapy Alliance, we take pride in developing our staff in order to
               provide the best quality services for our patients
             </Typography>
@@ -63,6 +67,7 @@ export default function WhyChooseUs() {
           </Grid>
         </Grid>
       </Box>
+      <Box sx={{ display: 'flex', justifyContent: 'center',}}><Button sx={buttonStyles}>See More</Button></Box>
     </Box>
   );
 }

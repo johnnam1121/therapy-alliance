@@ -9,8 +9,6 @@ import handshake from '../../pictures/handshake.jpg'
 import shapes from '../../pictures/shapes.png'
 
 export default function Landing() {
-  const therapyPicRow = { textAlign: 'center', pl: '15vw', pr: '15vw', alignItems: 'center', height: '90vh', backgroundColor: 'primary.light' }
-  const boldTitle = { textAlign: 'center', marginTop: '10vh', fontWeight: 'bold', fontSize: '4rem', color: '#ffffff', alignItems: 'center' };
   const buttonStyles = { mt: '7vh', display: 'block', ml: 'auto', mr: 'auto', color: '#ffffff', backgroundColor: '#00a99d', '&:hover': { backgroundColor: '#f36523' }, fontSize: '1.5vw' }
   const backgroundPhoto = require('../../pictures/physicalTherapy.jpeg');
   const background = {
@@ -24,6 +22,7 @@ export default function Landing() {
     alignItems: 'center',
     display: 'flex',
     width: '100%',
+    zIndex: 0
   };
 
   const imgStyles = {

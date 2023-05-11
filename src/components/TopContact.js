@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function TopContact() {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'space-between', bgColor: 'primary.main', ml: '10vw', mr: '10vw', minHeight: '8vh' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'space-between', bgColor: 'primary.main', minHeight: '8vh', px: '10vw' }}>
       <CssBaseline />
       <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
         <LinkedInIcon sx={{ boxShadow: '0 0 3px rgba(0, 0, 0, 0.3)', color: '#eeeeee', fontSize: '2rem', mr: '1vw' }} />
