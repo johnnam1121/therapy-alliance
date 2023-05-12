@@ -29,13 +29,6 @@ export default function Landing() {
     zIndex: 0
   };
 
-  const imgStyles = {
-    height: '70vh',
-    display: 'block',
-    marginRight: '10vw',
-    marginLeft: "auto",
-  }
-
   return (
     <Box sx={background}>
       <Grid container>

@@ -1,5 +1,5 @@
 import MenuIcon from '@mui/icons-material/Menu';
-import { Box, Button, CssBaseline, IconButton, Menu, MenuItem, Typography, useMediaQuery } from '@mui/material';
+import { Box, Button, CssBaseline, IconButton, Menu, MenuItem, Typography, useMediaQuery, } from '@mui/material';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../pictures/logo.png';
@@ -18,7 +18,10 @@ export default function Topbar() {
 
   const linkStyles = {
     zIndex: 3,
-    color: '#000000',
+    color: '#555555',
+    border: '1px solid',
+    mr: '1vw',
+    outline: '#555555',
     '&:hover': { backgroundColor: '#f36523' }
   }
 
@@ -46,10 +49,9 @@ export default function Topbar() {
           TD Therapy Alliance
         </Typography>
         <Box sx={{ display: { xs: "none", sm: "block" }, }}>
-          <Button component={Link} to="/" sx={linkStyles}>Home</Button>
-          <Button component={Link} to="/About" sx={linkStyles}>About</Button>
-          <Button component={Link} to="/Projects" sx={linkStyles}>About</Button>
-          <Button component={Link} to="/Experience" sx={linkStyles}>About</Button>
+          <Button variant='outlined' component={Link} to="/" sx={linkStyles}>Home</Button>
+          <Button variant='outlined' component={Link} to="/About" sx={linkStyles}>About</Button>
+          <Button variant='outlined' component={Link} to="/Contact" sx={linkStyles}>Contact</Button>
         </Box>
         {isMobile && (
           <div>
@@ -97,9 +99,9 @@ export default function Topbar() {
               transformOrigin={{ horizontal: 'right', vertical: 'top' }}
               anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
             >
+              <MenuItem component={Link} onClick={handleClose} to="/" >Home</MenuItem>
               <MenuItem component={Link} onClick={handleClose} to="/About" >About</MenuItem>
-              <MenuItem component={Link} onClick={handleClose} to="/Projects" >Projects</MenuItem>
-              <MenuItem component={Link} onClick={handleClose} to="/Experience" >Experience</MenuItem>
+              <MenuItem component={Link} onClick={handleClose} to="/Contact" >Contact</MenuItem>
             </Menu>
           </div>
         )}

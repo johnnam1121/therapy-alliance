@@ -8,6 +8,7 @@ import Landing from '../components/homePageComponents/Landing';
 import Questions from '../components/homePageComponents/Questions';
 import TherapyBanner from '../components/homePageComponents/TherapyBanner';
 import WhyChooseUs from '../components/homePageComponents/WhyChooseUs';
+import { useEffect } from 'react';
 
 
 // #00a693 (a dark greenish-blue)
@@ -68,7 +69,6 @@ const theme = createTheme({
       '@media (max-width: 768px)': {
         fontSize: '0.75rem',
       },
-
     },
     body1: {
       color: '#777777',
@@ -78,6 +78,10 @@ const theme = createTheme({
 });
 
 export default function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ backgroundColor: theme.palette.primary.main }}>

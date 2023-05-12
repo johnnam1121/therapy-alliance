@@ -12,41 +12,62 @@ export default function Footer() {
     textAlign: 'center',
     color: '#eeeeee',
     margin: '1vh',
+    '&:hover': {
+      color: '#f36523',
+      scale: '1.10',
+      transition: '.5s'
+    },
+    '&:not(:hover)': {
+      transition: '.5s'
+    },
   };
+
   const menuTitles = {
     mt: '4vh',
     mb: '2vh',
     textAlign: 'center',
     color: '#FFFFFF',
     textDecoration: 'underline'
-  }
+  };
   const menuText = {
     textAlign: 'center',
     color: '#eeeeee',
-  }
+  };
   const iconStyles = {
     boxShadow: '0 0 2px rgba(0, 0, 0, 0.3)',
     color: '#eeeeee',
     fontSize: isMobile ? '3rem' : '2rem',
     mr: '1vw',
-    borderRadius: '30%'
+    borderRadius: '30%',
+    '&:hover': {
+      color: '#f36523',
+      scale: '1.10',
+      transition: '.5s'
+    },
+    '&:not(:hover)': {
+      transition: '.5s'
+    },
   };
 
   return (
     <Box>
       <Grid container spacing={1} sx={{ backgroundColor: 'primary.main', px: '5vw' }}>
         <Grid item xs={12} md={3} >
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+          <Box>
             {/* <img src={logo} alt='logo' style={{ height: '5vh', backgroundColor: 'rgba(0,0,0,0.25)', borderRadius: '50%', }} /> */}
-            <Typography variant='h4' sx={{ mt: '4vh', mb: '2vh', textAlign: 'center', color: '#FFFFFF', textDecoration: 'underline' }}>
+            <Typography variant='h4' sx={menuTitles}>
               TD Therapy Alliance
             </Typography>
           </Box>
-          <Typography variant='body1' sx={menuText}>
+          <Typography component={Link} sx={linkStyles} to='https://goo.gl/maps/LVANx7L2f6vnkDf28' target="_blank" rel="noopener noreferrer" >
             22742 Cypresswood Dr. #1174<br />
             Spring, TX, 77373<br />
-            Mail: TBD<br />
-            Tel: TBD<br />
+          </Typography>
+          <Typography component={Link} sx={linkStyles} to='mailto: johnnam93@gmail.com' target="_blank" rel="noopener noreferrer" >
+            Mail: TBD
+          </Typography>
+          <Typography component={Link} sx={linkStyles} to='tel::+8324557478' target="_blank" rel="noopener noreferrer" >
+            Tel: TBD
           </Typography>
         </Grid>
         <Grid item xs={12} md={3} sx={menuText}>
@@ -54,9 +75,8 @@ export default function Footer() {
             Menu
           </Typography>
           <Typography component={Link} to="/" sx={linkStyles}>Home</Typography>
-          <Typography component={Link} to="/" sx={linkStyles}>About</Typography>
-          <Typography component={Link} to="/" sx={linkStyles}>Service</Typography>
-          <Typography component={Link} to="/" sx={linkStyles}>Contact</Typography>
+          <Typography component={Link} to="/About" sx={linkStyles}>About</Typography>
+          <Typography component={Link} to="/Contact" sx={linkStyles}>Contact</Typography>
         </Grid>
         <Grid item xs={12} md={3}>
           <Typography variant='h4' sx={menuTitles}>
@@ -77,10 +97,10 @@ export default function Footer() {
             Social Media
           </Typography>
           <Box sx={menuText}>
-            <LinkedInIcon sx={iconStyles} />
-            <InstagramIcon sx={iconStyles} />
-            <InstagramIcon sx={iconStyles} />
-            <InstagramIcon sx={iconStyles} />
+            <Link to='https://www.google.com/?safe=active&ssui=on' target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={iconStyles} /></Link>
+            <Link to='https://www.google.com/?safe=active&ssui=on' target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={iconStyles} /></Link>
+            <Link to='https://www.google.com/?safe=active&ssui=on' target="_blank" rel="noopener noreferrer"><InstagramIcon sx={iconStyles} /></Link>
+            <Link to='https://www.google.com/?safe=active&ssui=on' target="_blank" rel="noopener noreferrer"><InstagramIcon sx={iconStyles} /></Link>
           </Box>
           <Typography variant='h4' sx={menuTitles}>
             Some Useful Information

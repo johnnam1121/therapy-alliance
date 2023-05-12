@@ -3,9 +3,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Footer from '../components/Footer';
 import TopContact from '../components/TopContact';
 import Topbar from '../components/Topbar';
-import AboutLanding from '../components/aboutPageComponents/AboutLanding';
-import Mission from '../components/aboutPageComponents/Mission';
-import MeetTheTeam from '../components/aboutPageComponents/MeetTheTeam';
+import ContactForm from '../components/contactPageComponents/ContactForm';
+import ContactLanding from '../components/contactPageComponents/ContactLanding';
 import { useEffect } from 'react';
 
 // #00a693 (a dark greenish-blue)
@@ -63,7 +62,6 @@ const theme = createTheme({
     h6: {
       color: '#eeeeee',
       fontSize: '1.1rem',
-
     },
     body1: {
       color: '#777777',
@@ -72,19 +70,18 @@ const theme = createTheme({
   },
 });
 
-export default function AboutPage() {
+export default function ContactPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
+  
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ backgroundColor: theme.palette.primary.main }}>
         <TopContact />
         <Topbar />
-        <AboutLanding />
-        <Mission />
-        <MeetTheTeam />
+        <ContactLanding />
+        <ContactForm />
         <Footer />
       </Box>
     </ThemeProvider>

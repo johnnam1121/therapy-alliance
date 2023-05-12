@@ -32,7 +32,7 @@ export default function HandshakeQuote() {
             some text heresome text heresome text heresome text heresome text heresome text heresome text
             heresome text heresome text heresome text heresome text heresome text heresome text here
           </Typography>
-          <Typography style={{ fontFamily: "Lucida Calligraphy", position: 'absolute', p: '0', }}>
+          <Typography style={{ fontFamily: "Lucida Calligraphy", position: isMobile ? '' : 'absolute', p: '0' }}>
             "Beyond Recovery, Towards Optimal Health: Our Vision For Therapy"
           </Typography>
         </Grid>

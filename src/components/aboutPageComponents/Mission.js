@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 
 export default function Mission() {
   const isMobile = useMediaQuery('(max-width:768px)');
