@@ -1,11 +1,12 @@
 import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import Footer from '../components/Footer';
 import TopContact from '../components/TopContact';
 import Topbar from '../components/Topbar';
 import ContactForm from '../components/contactPageComponents/ContactForm';
 import ContactLanding from '../components/contactPageComponents/ContactLanding';
-import { useEffect } from 'react';
 
 // #00a693 (a dark greenish-blue)
 // #45b1e8 (a bright sky blue)
@@ -74,16 +75,26 @@ export default function ContactPage() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  
+
   return (
-    <ThemeProvider theme={theme}>
-      <Box sx={{ backgroundColor: theme.palette.primary.main }}>
-        <TopContact />
-        <Topbar />
-        <ContactLanding />
-        <ContactForm />
-        <Footer />
-      </Box>
-    </ThemeProvider>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{
+        ease: 'easeInOut',
+        duration: '1'
+      }}
+    >
+      <ThemeProvider theme={theme}>
+        <Box sx={{ backgroundColor: theme.palette.primary.main }}>
+          <TopContact />
+          <Topbar />
+          <ContactLanding />
+          <ContactForm />
+          <Footer />
+        </Box>
+      </ThemeProvider>
+    </motion.div >
   );
 }

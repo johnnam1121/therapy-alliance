@@ -3,6 +3,7 @@ import { Box, Button, CssBaseline, IconButton, Menu, MenuItem, Typography, useMe
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../pictures/logo.png';
+import { motion } from 'framer-motion';
 
 export default function Topbar() {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -41,10 +42,14 @@ export default function Topbar() {
       zIndex: 10,
     }}>
       <CssBaseline />
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', minHeight: '8vh' }}>
-        <IconButton size="large" edge="start" color='inherit' aria-label="menu" component={Link} to="/">
-          <img src={logo} alt='logo' height={'25vw'} />
-        </IconButton>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', minHeight: '5vh' }}>
+        <motion.div
+          whileHover={{ rotate: [0, -7, 7, -7, 7, 0], transition: { duration: 0.3 } }}
+        >
+          <IconButton size="large" edge="start" color="inherit" aria-label="menu" component={Link} to="/">
+            <img src={logo} alt="logo" height={'25vw'} />
+          </IconButton>
+        </motion.div>
         <Typography variant="h5" component="div" sx={boldName}>
           TD Therapy Alliance
         </Typography>

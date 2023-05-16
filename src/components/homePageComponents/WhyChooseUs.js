@@ -1,5 +1,6 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import stock from '../../pictures/stockimg.jpg';
+import { Link } from 'react-router-dom';
 
 export default function WhyChooseUs() {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -74,7 +75,7 @@ export default function WhyChooseUs() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'center', }}><Button sx={buttonStyles}>See More</Button></Box>
+      <Box sx={{ display: 'flex', justifyContent: 'center', }}><Button sx={buttonStyles} component={Link} to="/About">See More</Button></Box>
     </Box>
   );
 }

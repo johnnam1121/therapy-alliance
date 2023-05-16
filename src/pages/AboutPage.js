@@ -1,12 +1,13 @@
 import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import Footer from '../components/Footer';
 import TopContact from '../components/TopContact';
 import Topbar from '../components/Topbar';
 import AboutLanding from '../components/aboutPageComponents/AboutLanding';
-import Mission from '../components/aboutPageComponents/Mission';
 import MeetTheTeam from '../components/aboutPageComponents/MeetTheTeam';
-import { useEffect } from 'react';
+import Mission from '../components/aboutPageComponents/Mission';
 
 // #00a693 (a dark greenish-blue)
 // #45b1e8 (a bright sky blue)
@@ -78,15 +79,25 @@ export default function AboutPage() {
   }, [])
 
   return (
-    <ThemeProvider theme={theme}>
-      <Box sx={{ backgroundColor: theme.palette.primary.main }}>
-        <TopContact />
-        <Topbar />
-        <AboutLanding />
-        <Mission />
-        <MeetTheTeam />
-        <Footer />
-      </Box>
-    </ThemeProvider>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{
+        ease: 'easeInOut',
+        duration: '1'
+      }}
+    >
+      <ThemeProvider theme={theme}>
+        <Box sx={{ backgroundColor: theme.palette.primary.main }}>
+          <TopContact />
+          <Topbar />
+          <AboutLanding />
+          <Mission />
+          <MeetTheTeam />
+          <Footer />
+        </Box>
+      </ThemeProvider>
+    </motion.div>
   );
 }

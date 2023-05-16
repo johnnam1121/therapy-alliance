@@ -24,7 +24,7 @@ export default function Questions() {
           <Grid item xs={1} md={1} />
           <Grid item xs={10} md={10} sx={{ mt: '4vh' }}>
             <Typography variant='h1' sx={{ textAlign: 'center', color: '#ffffff', fontSize: '3.25rem' }}>
-              Questions? <a href="google.com" style={{ color: '#000000' }}>Contact Us</a>
+              Questions? <a href="http://johnnam1121.github.io/therapy-alliance#/Contact" style={{ color: '#000000' }}>Contact Us</a>
             </Typography>
           </Grid>
         </Grid>
