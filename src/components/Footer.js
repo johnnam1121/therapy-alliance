@@ -102,14 +102,21 @@ export default function Footer() {
             <Link to='https://www.google.com/?safe=active&ssui=on' target="_blank" rel="noopener noreferrer"><InstagramIcon sx={iconStyles} /></Link>
             <Link to='https://www.google.com/?safe=active&ssui=on' target="_blank" rel="noopener noreferrer"><InstagramIcon sx={iconStyles} /></Link>
           </Box>
-          <Typography variant='h4' sx={menuTitles}>
+          {/* <Typography variant='h4' sx={menuTitles}>
             Some Useful Information
-          </Typography>
+          </Typography> */}
           <Box sx={{ mb: '5vh', textAlign: 'center', }}>
-            <Typography variant='body1' sx={{ color: '#eeeeee' }}>blahblah?</Typography>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.7561165607276!2d-95.34515309999999!3d30.043853900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b4d141e1f53f%3A0xee26d6878410a62c!2s22742%20Cypresswood%20Dr%20%231174%2C%20Spring%2C%20TX%2077373!5e0!3m2!1sen!2sus!4v1684249295022!5m2!1sen!2sus"
+              width="isMobile? 80%: 100%"
+              height="100%"
+              allowFullScreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" />
+            {/* <Typography variant='body1' sx={{ color: '#eeeeee' }}>blahblah?</Typography>
             <Typography variant='body1' sx={{ color: '#eeeeee' }}>blahblahblahblahblahblahblah</Typography>
             <Typography variant='body1' sx={{ color: '#eeeeee' }}>blahblahblahblahblah?</Typography>
-            <Typography variant='body1' sx={{ color: '#eeeeee' }}>blahblahblahblahblahblahblahblahblahblah</Typography>
+            <Typography variant='body1' sx={{ color: '#eeeeee' }}>blahblahblahblahblahblahblahblahblahblah</Typography> */}
           </Box>
         </Grid>
       </Grid>
