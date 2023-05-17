@@ -40,7 +40,7 @@ export default function ContactForm() {
         </Typography>
       </Grid>
       <Grid item xs={12} md={6}>
-        <form action="https://formsubmit.co/johnnam93@gmail.com" method="POST">
+        <form action="https://formspree.io/f/meqwdnng" method="POST">
           <TextField
             label="Name"
             value={name}
@@ -81,18 +81,18 @@ export default function ContactForm() {
       <Grid item xs={12} md={6}>
         <Box sx={{ px: isMobile ? '0' : '3vw' }}>
           <Typography variant="h4" sx={{ mb: '3vh', mt: isMobile ? '3vh' : '0' }}>
-            John Seekers
+            Job Seekers
           </Typography>
           <Typography variant="h5" sx={{ color: '#555555', mb: '5vh' }}>
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
+            Call (713) 838-2256 to have a direct conversation with a recruiter
+            regarding career opportunities or complete our Contact Form.
           </Typography>
           <Typography variant="h4" sx={{ mb: '3vh' }}>
             Request Staffing
           </Typography>
           <Typography variant="h5" sx={{ color: '#555555', mb: '5vh' }}>
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
+            Please Call (713) 838-2256 in order to find out how TD Therapy alliance
+            can meet your staffing needs or complete our Contact Form.
           </Typography>
         </Box>
       </Grid>

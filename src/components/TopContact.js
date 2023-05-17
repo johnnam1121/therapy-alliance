@@ -4,6 +4,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import { Box, CssBaseline, Grid, IconButton, Typography, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function TopContact() {
 
@@ -31,32 +32,32 @@ export default function TopContact() {
       <CssBaseline />
       <Grid container alignItems="center" justifyContent="flex-end">
         <Grid item xs={6} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
-          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="/">
+          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.instagram.com/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
             <LinkedInIcon sx={iconStyles} />
           </IconButton>
-          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="/">
-            <LinkedInIcon sx={iconStyles} />
+          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.instagram.com/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
+            <InstagramIcon sx={iconStyles} />
           </IconButton>
-          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="/">
+          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.instagram.com/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
             <LinkedInIcon sx={iconStyles} />
           </IconButton>
         </Grid>
         <Grid item xs={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
           <Typography variant="h6" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
-            <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="mailto: johnnam93@gmail.com">
+            <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="mailto: admin@tdtherapyalliance.com">
               <EmailIcon sx={iconStyles} />
             </IconButton>
             <Box sx={{ mr: '1vw', display: { xs: "none", sm: "block" } }}>
-              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='mailto: johnnam93@gmail.com' target="_blank" rel="noopener noreferrer" >
-                someemail@gmail.com
+              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='mailto: admin@tdtherapyalliance.com' target="_blank" rel="noopener noreferrer" >
+                admin@tdtherapyalliance.com
               </Typography>
             </Box>
-            <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="tel::+8324557478">
+            <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="tel::+7138382256">
               <LocalPhoneIcon sx={iconStyles} />
             </IconButton>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='tel::+8324557478' target="_blank" rel="noopener noreferrer" >
-                (123) 456-7890
+              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='tel::+7138382256' target="_blank" rel="noopener noreferrer" >
+                (713) 838-2256
               </Typography>
             </Box>
           </Typography>

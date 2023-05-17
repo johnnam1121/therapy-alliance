@@ -24,11 +24,11 @@ export default function AboutLanding() {
         <Grid item xd={12} md={12} sx={{ textAlign: 'center', p: '6vw', alignItems: 'center', }} >
           <Typography variant='h1'>About Us</Typography>
           <Typography variant='h5' sx={{ color: '#eeeeee', px: '10vw', mt: '3vh' }}>
-            We seek to improve the home health industry by raising the bar...
-            We seek to improve the home health industry by raising the bar...
-            We seek to improve the home health industry by raising the bar...
-            We seek to improve the home health industry by raising the bar...
-            We seek to improve the home health industry by raising the bar...
+            We seek to improve the home health industry by raising the bar for quality care.
+            With years of experience in the field, we have identified areas where the industry
+            could benefit from better training and higher standards. At TD Therapy Alliance,
+            we are committed to making a positive difference in the lives of our patients by
+            providing quality services that prioritize their well-being above all else.
           </Typography>
         </Grid>
       </Grid>

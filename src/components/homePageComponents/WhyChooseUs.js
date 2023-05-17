@@ -1,5 +1,7 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
-import stock from '../../pictures/stockimg.jpg';
+import ReasonOne from '../../pictures/ReasonOne.png';
+import ReasonTwo from '../../pictures/ReasonTwo.png';
+import ReasonThree from '../../pictures/ReasonThree.png';
 import { Link } from 'react-router-dom';
 
 export default function WhyChooseUs() {
@@ -7,8 +9,14 @@ export default function WhyChooseUs() {
 
   const whyChooseUs = { textAlign: 'center', minHeight: '45vh', alignItems: 'center', boxShadow: '0 4px 8px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15)', };
   const textStyles = { textAlign: 'center', fontWeight: 'bold', mb: '5vh', px: isMobile ? '8vw' : '3vw' }
-  const imgRow = { textAlign: 'center', px: '7vw', alignItems: 'center', minHeight: '70vh' }
-  const imgStyles = { height: '15vh', marginBottom: '1vh', borderRadius: '50%', marginTop: isMobile ? '5vh' : 0 }
+  const imgRow = { textAlign: 'center', px: '7vw', py: '10vh', }
+  const imgStyles = {
+    width: isMobile ? '50vw' : '15vw',
+    height: isMobile ? '' : '15vh',
+    marginBottom: '1vh',
+    borderRadius: '50%',
+    marginTop: isMobile ? '5vh' : 0
+  }
   const buttonStyles = { color: '#ffffff', backgroundColor: '#00a99d', '&:hover': { backgroundColor: '#f36523' }, fontSize: isMobile ? '3vw' : '1.25vw', mb: '5vh', mt: isMobile ? '3vh' : 0 }
   const backgroundPhoto = require('../../pictures/therapyStock.jpeg');
   const background = {
@@ -44,8 +52,8 @@ export default function WhyChooseUs() {
       <Box>
         <Grid container sx={imgRow} spacing={5}>
           <Grid item xs={12} md={4}>
-            <img src={stock} alt='stock image' style={imgStyles} />
-            <Typography variant='h3' sx={{ mb: '2vh' }}>
+            <img src={ReasonOne} alt='Developed Therapist' style={imgStyles} />
+            <Typography variant='h4' sx={{ mb: '2vh' }}>
               Developed Therapist
             </Typography>
             <Typography variant='body 1'>
@@ -54,18 +62,18 @@ export default function WhyChooseUs() {
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <img src={stock} alt='stock image' style={imgStyles} />
-            <Typography variant='h3' sx={{ mb: '2vh' }}>
-              Developed Therapist
+            <img src={ReasonTwo} alt='Training Program' style={imgStyles} />
+            <Typography variant='h4' sx={{ mb: '2vh' }}>
+              Training Program
             </Typography>
             <Typography variant='body 1'>
-              Our highly trained and qualified therapists are specialized in numerous fields to meet your unique needs.
-              We pride ourselves on being able to deliver comprehensive medical knowledge in a diverse selection of languages.
+              Our training programs are implemented in order to provide the necessary resources for our therapists to
+              strive in their profession. We provide year-round support to ensure our therapists are constantly improving.
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <img src={stock} alt='stock image' style={imgStyles} />
-            <Typography variant='h3' sx={{ mb: '2vh' }}>
+            <img src={ReasonThree} alt='Developed Therapist' style={imgStyles} />
+            <Typography variant='h4' sx={{ mb: '2vh' }}>
               Developed Therapist
             </Typography>
             <Typography variant='body 1'>

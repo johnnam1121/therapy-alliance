@@ -41,7 +41,7 @@ export default function MeetTheTeam() {
                 </Box>
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-                  <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
+                  <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
                   <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
                 </Box>
               </div>
@@ -51,7 +51,7 @@ export default function MeetTheTeam() {
                 </Box>
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-                  <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
+                  <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
                   <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
                 </Box>
               </div>
@@ -61,7 +61,7 @@ export default function MeetTheTeam() {
                 </Box>
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-                  <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
+                  <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
                   <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
                 </Box>
               </div>
@@ -83,7 +83,7 @@ export default function MeetTheTeam() {
             </Box>
             <Box sx={{ textAlign: 'center', mt: 2 }}>
               <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-              <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
+              <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
               <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
             </Box>
           </Paper>
@@ -95,7 +95,7 @@ export default function MeetTheTeam() {
             </Box>
             <Box sx={{ textAlign: 'center', mt: 2 }}>
               <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-              <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
+              <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
               <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
             </Box>
           </Paper>
@@ -105,68 +105,3 @@ export default function MeetTheTeam() {
     </Box>
   );
 }
-
-// <Box>
-// {isMobile ? (
-//   <Slider dots={true} autoplay={true} autoplaySpeed={1000}>
-//     <Box sx={{ display: 'block', mx: 'auto' }}>
-//       <Paper sx={paperStyles}>
-//         <Box sx={{ textAlign: 'center' }}>
-//           <img src={Tony} alt='Tony Pic' style={imgStyles} />
-//         </Box>
-//         <Box sx={{ textAlign: 'center', mt: 2 }}>
-//           <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-//           <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
-//           <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
-//         </Box>
-//       </Paper>
-//     </Box>
-//     <Box>
-//       <Paper sx={paperStyles}>
-//         <Box sx={{ textAlign: 'center' }}>
-//           <img src={David} alt='David Pic' style={imgStyles} />
-//         </Box>
-//         <Box sx={{ textAlign: 'center', mt: 2 }}>
-//           <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-//           <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
-//           <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
-//         </Box>
-//       </Paper>
-//     </Box>
-//   </Slider>
-// ) : (
-//   <Grid container spacing={3} sx={{ backgroundColor: 'primary.dark', px: '15vw', }}>
-//     <Grid item xs={12} md={12} sx={{ mt: '5vh' }}>
-//       <Typography variant='h3'>
-//         Meet The Team
-//       </Typography>
-//     </Grid>
-//     <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
-//       <Paper sx={paperStyles}>
-//         <Box sx={{ textAlign: 'center' }}>
-//           <img src={Tony} alt='Tony Pic' style={imgStyles} />
-//         </Box>
-//         <Box sx={{ textAlign: 'center', mt: 2 }}>
-//           <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-//           <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
-//           <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
-//         </Box>
-//       </Paper>
-//     </Grid>
-//     <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
-//       <Paper sx={paperStyles}>
-//         <Box sx={{ textAlign: 'center' }}>
-//           <img src={David} alt='David Pic' style={imgStyles} />
-//         </Box>
-//         <Box sx={{ textAlign: 'center', mt: 2 }}>
-//           <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-//           <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Trans</Typography>
-//           <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
-//         </Box>
-//       </Paper>
-//     </Grid>
-//   </Grid>
-// )};
-// </Box>
-// );
-// }

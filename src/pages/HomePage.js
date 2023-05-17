@@ -73,7 +73,7 @@ const theme = createTheme({
     },
     body1: {
       color: '#777777',
-      fontSize: '2.3vh'
+      fontSize: '1rem',
     },
   },
 });
