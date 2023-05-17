@@ -24,7 +24,7 @@ export default function ContactLanding() {
         <Grid item xd={12} md={12} sx={{ textAlign: 'center', p: '6vw', alignItems: 'center', }} >
           <Typography variant='h1'>Contact Us</Typography>
           <Typography variant='h5' sx={{ color: '#eeeeee', px: '10vw', mt: '3vh' }}>
-            We seek to improve the home health industry by raising the bar...
+            For any further questions please feel free to reach out to us below.
           </Typography>
         </Grid>
       </Grid>

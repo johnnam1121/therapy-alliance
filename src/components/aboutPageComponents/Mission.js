@@ -26,11 +26,11 @@ export default function Mission() {
             Mission:
           </Typography>
           <Typography variant='h5' sx={textStyles}>
-            Some text goes hereSome text goes hereSome text goes
-            hereSome text goes hereSome text goes
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
-            Some text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes herev
-            hereSome text goes hereSome text goes here
+            At TD Therapy Alliance, our mission is to foster professional growth and development among our therapists in order
+            to provide the highest quality services to our patients. We believe that by setting a higher standard in healthcare,
+            we can make a positive impact on the lives of those we serve. Our commitment to excellence extends to every aspect
+            of our practice. By prioritizing the well-being of our patients, we aim to achieve optimal health
+            outcomes and help them live their best lives.
           </Typography>
         </Grid>
         <Grid item xs={12} md={12}>
@@ -38,11 +38,9 @@ export default function Mission() {
             Vision:
           </Typography>
           <Typography variant='h5' sx={textStyles}>
-            Some text goes hereSome text goes hereSome text goes
-            hereSome text goes hereSome text goes
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
-            Some text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes herev
-            hereSome text goes hereSome text goes here
+            Our vision is to transform the industry by providing our team with comprehensive training,
+            promoting consistency and excellence in therapy services. By investing in our therapists'
+            professional development, we aim to cultivate leading health care providers of the future.
           </Typography>
         </Grid>
         <Grid item xs={12} md={12} sx={{ mb: '10vh' }}>
@@ -50,11 +48,10 @@ export default function Mission() {
             Values:
           </Typography>
           <Typography variant='h5' sx={textStyles}>
-            Some text goes hereSome text goes hereSome text goes
-            hereSome text goes hereSome text goes
-            Some text goes hereSome text goes hereSome text goes hereSome text goes here
-            Some text goes hereSome text goes hereSome text goes hereSome text goes hereSome text goes herev
-            hereSome text goes hereSome text goes here
+            At TD Therapy Alliance, our core value is to provide exceptional and patient-centered care through a
+            commitment to promoting growth and excellence in our therapists. We prioritize consistency, innovation,
+            and the highest standards of professional development to ensure transformative outcomes and
+            optimal well-being for our patients.
           </Typography>
         </Grid>
       </Grid>
