@@ -2,10 +2,11 @@
   "name": "therapy-alliance",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TherapyAlliance.github.io/therapy-alliance",
+  "homepage": "https://tdtherapyalliance.com",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@formspree/react": "^2.4.1",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.3",
     "@testing-library/jest-dom": "^5.16.5",

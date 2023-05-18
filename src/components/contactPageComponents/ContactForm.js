@@ -8,21 +8,7 @@ export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const formData = { name, email, message };
-    axios
-      .post("https://formsubmit.co/johnnam93@gmail.com", formData)
-      .then((response) => {
-        console.log(response);
-        alert("Message sent successfully!");
-      })
-      .catch((error) => {
-        console.log(error);
-        alert("An error occurred while sending the message.");
-      });
-  };
+  const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const buttonStyles = {
     color: '#ffffff',
@@ -32,6 +18,47 @@ export default function ContactForm() {
     borderRadius: '10%'
   }
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (name && email && message) {
+      try {
+        await axios.post("https://formspree.io/f/meqwdnng", {
+          name,
+          email,
+          message
+        });
+        setSubmissionStatus("success");
+      } catch (error) {
+        setSubmissionStatus("error");
+      }
+    }
+  };
+
+  const renderSubmissionStatus = () => {
+    if (submissionStatus === "success") {
+      return (
+        <Grid container spacing={2} sx={{ backgroundColor: 'primary.light', px: '10vw', py: '5vh' }}>
+          <Grid item xs={12} md={12}>
+            <Typography variant="h6" sx={{ color: "#777777" }}>
+              Thank you for your message! We will get back to you soon.
+            </Typography>
+          </Grid>
+        </Grid>
+      );
+    } else if (submissionStatus === "error") {
+      return (
+        <Grid container spacing={2} sx={{ backgroundColor: 'primary.light', px: '10vw', py: '5vh' }}>
+          <Grid item xs={12} md={12}>
+            <Typography variant="h6">
+              An unexpected error has occurred when sending the message. Please try again at another time or email us directly at admin@tdtherapyalliance.com.
+            </Typography>
+          </Grid>
+        </Grid>
+      );
+    }
+    return null;
+  };
+
   return (
     <Grid container spacing={2} sx={{ backgroundColor: 'primary.light', px: '10vw', py: '5vh', }}>
       <Grid item xs={12} md={12}>
@@ -40,43 +67,46 @@ export default function ContactForm() {
         </Typography>
       </Grid>
       <Grid item xs={12} md={6}>
-        <form action="https://formspree.io/f/meqwdnng" method="POST">
-          <TextField
-            label="Name"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-            fullWidth
-            required
-            margin="normal"
-          />
-          <TextField
-            label="Email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            fullWidth
-            required
-            margin="normal"
-          />
-          <TextField
-            label="Message"
-            value={message}
-            onChange={(event) => setMessage(event.target.value)}
-            multiline
-            rows={4}
-            fullWidth
-            required
-            margin="normal"
-          />
-          <Button
-            variant="contained"
-            color="primary"
-            type="submit"
-            endIcon={<SendIcon />}
-            sx={buttonStyles}
-          >
-            Send
-          </Button>
-        </form>
+        {submissionStatus !== "success" &&
+          <form onSubmit={handleSubmit}>
+            <TextField
+              label="Name"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              fullWidth
+              required
+              margin="normal"
+            />
+            <TextField
+              label="Email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              fullWidth
+              required
+              margin="normal"
+            />
+            <TextField
+              label="Message"
+              value={message}
+              onChange={(event) => setMessage(event.target.value)}
+              multiline
+              rows={4}
+              fullWidth
+              required
+              margin="normal"
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              type="submit"
+              endIcon={<SendIcon />}
+              sx={buttonStyles}
+            >
+              Send
+            </Button>
+          </form>
+        }
+        {renderSubmissionStatus()}
       </Grid>
       <Grid item xs={12} md={6}>
         <Box sx={{ px: isMobile ? '0' : '3vw' }}>

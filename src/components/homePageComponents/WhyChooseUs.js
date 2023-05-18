@@ -11,8 +11,8 @@ export default function WhyChooseUs() {
   const textStyles = { textAlign: 'center', fontWeight: 'bold', mb: '5vh', px: isMobile ? '8vw' : '3vw' }
   const imgRow = { textAlign: 'center', px: '7vw', py: '10vh', }
   const imgStyles = {
-    width: isMobile ? '50vw' : '15vw',
-    height: isMobile ? '' : '15vh',
+    height: isMobile ? '20vh' : '15vh',
+    width: isMobile ? '' : '10vw',
     marginBottom: '1vh',
     borderRadius: '50%',
     marginTop: isMobile ? '5vh' : 0
