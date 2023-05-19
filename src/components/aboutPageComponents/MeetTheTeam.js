@@ -19,7 +19,7 @@ export default function MeetTheTeam() {
   }
 
   const imgStyles = {
-    height: isMobile ? '50vh' : '60vh',
+    height: isMobile ? '45vh' : '60vh',
     width: isMobile ? '70vw' : '25vw',
     borderRadius: '10%'
   }

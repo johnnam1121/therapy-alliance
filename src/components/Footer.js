@@ -12,6 +12,7 @@ export default function Footer() {
     textAlign: 'center',
     color: '#eeeeee',
     margin: '1vh',
+    textDecoration: 'none',
     '&:hover': {
       color: '#f36523',
       scale: '1.10',

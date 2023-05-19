@@ -1,4 +1,4 @@
-import { Box, Grid, Paper, Typography, useMediaQuery } from '@mui/material';
+import { Box, Grid, Paper, Typography, useMediaQuery, Card, CardContent } from '@mui/material';
 import OT from '../../pictures/Banner-OT.png'
 import PT from '../../pictures/Banner-PT.png'
 import SLP from '../../pictures/Banner-SLP.png'
@@ -8,19 +8,16 @@ export default function TherapyBanner() {
   const isMobile = useMediaQuery('(max-width:768px)');
 
   const containerStyles = {
-    justifyContent: 'center',
     textAlign: 'center',
-    alignItems: 'stretch',
     px: '8vw',
     backgroundColor: 'primary.light',
   }
 
-  const paperStyles = {
+  const cardStyles = {
     transform: 'translateY(-8vh)',
     backgroundColor: 'primary.dark',
     mb: isMobile ? '0vh' : '3vh',
-    height: isMobile ? '' : '55vh',
-    pt: '3vh',
+    height: '100%',
   }
 
   const imgStyles = {
@@ -33,10 +30,10 @@ export default function TherapyBanner() {
 
   return (
     <Box>
-      <Grid container spacing={6} sx={containerStyles}>
-        <Grid item xs={12} md={4}>
-          <motion.div initial={{ x: '20vw' }} animate={{ x: 0 }} transition={{ duration: 1, delay: 0 }}>
-            <Paper sx={paperStyles}>
+      <Grid container spacing={0} sx={containerStyles}>
+        <Grid item xs={12} md={4} sx={{ px: '1vw', pb: isMobile ? '2vh' : '0' }} component={motion.div} initial={{ x: '20vw' }} animate={{ x: 0 }} transition={{ duration: 1, delay: 0 }}>
+          <Card sx={cardStyles}>
+            <CardContent>
               <img src={PT} alt='Physical Therapy' style={imgStyles} />
               <div style={{ marginInline: '2vw' }}>
                 <Typography variant='h4' sx={{ mb: '2vh' }}>
@@ -48,12 +45,12 @@ export default function TherapyBanner() {
                   </Typography>
                 </div>
               </div>
-            </Paper>
-          </motion.div>
+            </CardContent>
+          </Card>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <motion.div initial={{ x: '20vw' }} animate={{ x: 0 }} transition={{ duration: 1, delay: 0.25 }}>
-            <Paper sx={paperStyles}>
+        <Grid item xs={12} md={4} sx={{ px: '1vw', pb: isMobile ? '2vh' : '0' }} component={motion.div} initial={{ x: '20vw' }} animate={{ x: 0 }} transition={{ duration: 1, delay: 0.5 }}>
+          <Card sx={cardStyles}>
+            <CardContent>
               <img src={OT} alt='Occupational Therapy' style={imgStyles} />
               <div style={{ marginInline: '2vw' }}>
                 <Typography variant='h4' sx={{ mb: '2vh' }}>
@@ -65,12 +62,12 @@ export default function TherapyBanner() {
                   </Typography>
                 </div>
               </div>
-            </Paper>
-          </motion.div>
+            </CardContent>
+          </Card>
         </Grid>
-        <Grid item xs={12} md={4}>
-          <motion.div initial={{ x: '20vw' }} animate={{ x: 0 }} transition={{ duration: 1, delay: 0.5 }}>
-            <Paper sx={paperStyles}>
+        <Grid item xs={12} md={4} sx={{ px: '1vw', pb: isMobile ? '2vh' : '0' }} component={motion.div} initial={{ x: '20vw' }} animate={{ x: 0 }} transition={{ duration: 1, delay: 1 }}>
+          <Card sx={cardStyles}>
+            <CardContent>
               <img src={SLP} alt='Speech Language Pathology' style={imgStyles} />
               <div style={{ marginInline: '2vw' }}>
                 <Typography variant='h4' sx={{ mb: '2vh' }}>
@@ -82,10 +79,10 @@ export default function TherapyBanner() {
                   </Typography>
                 </div>
               </div>
-            </Paper>
-          </motion.div>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
-    </Box>
+    </Box >
   );
 }

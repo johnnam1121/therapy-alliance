@@ -48,7 +48,7 @@ export default function TopContact() {
               <EmailIcon sx={iconStyles} />
             </IconButton>
             <Box sx={{ mr: '1vw', display: { xs: "none", sm: "block" } }}>
-              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='mailto: admin@tdtherapyalliance.com' target="_blank" rel="noopener noreferrer" >
+              <Typography variant='body1' sx={{ color: '#eeeeee', textDecoration: 'none' }} component={Link} to='mailto: admin@tdtherapyalliance.com' target="_blank" rel="noopener noreferrer" >
                 admin@tdtherapyalliance.com
               </Typography>
             </Box>
@@ -56,7 +56,7 @@ export default function TopContact() {
               <LocalPhoneIcon sx={iconStyles} />
             </IconButton>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='tel::+7138382256' target="_blank" rel="noopener noreferrer" >
+              <Typography variant='body1' sx={{ color: '#eeeeee', textDecoration: 'none' }} component={Link} to='tel::+7138382256' target="_blank" rel="noopener noreferrer" >
                 (713) 838-2256
               </Typography>
             </Box>
