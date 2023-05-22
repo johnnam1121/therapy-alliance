@@ -121,7 +121,7 @@ export default function ContactForm() {
             Request Staffing
           </Typography>
           <Typography variant="h5" sx={{ color: '#555555', mb: '5vh' }}>
-            Please Call (713) 838-2256 in order to find out how TD Therapy alliance
+            Please Call (713) 838-2256 in order to find out how TD Therapy Alliance
             can meet your staffing needs or complete our Contact Form.
           </Typography>
         </Box>

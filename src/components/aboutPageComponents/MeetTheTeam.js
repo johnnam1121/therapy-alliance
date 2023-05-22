@@ -26,7 +26,7 @@ export default function MeetTheTeam() {
 
   return (
     <Box>{isMobile ? (
-      <Grid container spacing={3} sx={{ backgroundColor: 'primary.dark', px: isMobile ? '10vw' : '15vw', }}>
+      <Grid container spacing={3} sx={{ backgroundColor: 'primary.light', px: isMobile ? '10vw' : '15vw', }}>
         <Grid item xs={12} md={12} sx={{ mt: '5vh' }}>
           <Typography variant='h3'>
             Meet The Team
@@ -70,7 +70,7 @@ export default function MeetTheTeam() {
         </Grid>
       </Grid>
     ) : (
-      <Grid container spacing={3} sx={{ backgroundColor: 'primary.dark', px: isMobile ? '10vw' : '15vw', }}>
+      <Grid container spacing={3} sx={{ backgroundColor: 'primary.light', px: isMobile ? '10vw' : '15vw', }}>
         <Grid item xs={12} md={12} sx={{ mt: '5vh' }}>
           <Typography variant='h3'>
             Meet The Team
