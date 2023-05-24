@@ -71,21 +71,20 @@ export default function WhyChooseUs() {
           <Grid item xs={12} md={4}>
             <img src={ReasonTwo} alt='Training Program' style={imgStyles} />
             <Typography variant='h4' sx={{ mb: '2vh' }}>
-              Training Program
+              Dedicated Staff
             </Typography>
             <Typography variant='body 1'>
-              Our training programs are implemented in order to provide the necessary resources for our therapists to
-              strive in their profession. We provide year-round support to ensure our therapists are constantly improving.
+              Our reliable team members are committed to customer responsiveness and submit notes in a well timed manner.
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <img src={ReasonThree} alt='Developed Therapist' style={imgStyles} />
             <Typography variant='h4' sx={{ mb: '2vh' }}>
-              Developed Therapist
+              Training Program
             </Typography>
             <Typography variant='body 1'>
-              Our highly trained and qualified therapists are specialized in numerous fields to meet your unique needs.
-              We pride ourselves on being able to deliver comprehensive medical knowledge in a diverse selection of languages.
+              Our training programs are implemented in order to provide the necessary resources for our therapists to
+              strive in their profession. We provide year-round support to ensure our therapists are constantly improving.
             </Typography>
           </Grid>
         </Grid>
