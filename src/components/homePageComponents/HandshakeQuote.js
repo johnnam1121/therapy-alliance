@@ -6,33 +6,34 @@ export default function HandshakeQuote() {
   const isMobile = useMediaQuery('(max-width:768px)');
 
   const imageStyles = {
-    height: isMobile ? '50vh' : '80vh',
+    height: isMobile ? '100%' : '80%',
     borderRadius: '20%',
+    overflow: 'hidden'
   }
 
   return (
     <Box sx={{ backgroundColor: 'primary.light', px: '10vw' }}>
       <Grid container>
-        <Grid xs={12} sm={6} sx={{ display: 'flex', justifyContent: 'center', my: '5vh' }}>
+        <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', my: isMobile ? 0 : '5vh', p: 3 }}>
           <img src={handshake} alt='handshake photo' style={imageStyles} />
         </Grid>
-        <Grid xs={12} sm={6} sx={{ mb: isMobile ? '10vh' : '0' }}>
+        <Grid item xs={12} md={6} sx={{ mb: isMobile ? '10vh' : '0', p: 3 }}>
           <Typography variant='h3' sx={{ mt: isMobile ? '0' : '5vh', mb: '3vh' }}>
-            some text here
+            We will work for you!
           </Typography>
           <Typography variant='h5' sx={{ color: '#777777' }}>
-            some text heresome text heresome text heresome text heresome text heresome text heresome text
-            heresome text heresome text heresome text heresome text heresome text heresome text here
-            some text heresome text heresome text heresome text heresome text heresome text heresome text
-            heresome text heresome text heresome text heresome text heresome text heresome text here
+            We (David and Tony) are graduates from the same institution and created TD Therapy Alliance to transform
+            the home health industry. We aim to improve healthcare standards and establish a stronger therapy network.
+            Upon entering the home health setting following our education, we initially encountered difficulties due
+            to our lack of familiarity and unclear expectations.
           </Typography>
           <Typography variant='h5' sx={{ color: '#777777', my: '3vh' }}>
-            some text heresome text heresome text heresome text heresome text heresome text heresome text
-            heresome text heresome text heresome text heresome text heresome text heresome text here
-            some text heresome text heresome text heresome text heresome text heresome text heresome text
-            heresome text heresome text heresome text heresome text heresome text heresome text here
+            However, through our experience in the field, we have
+            identified areas where the standard of care can be improved. Join us in our mission to drive positive change
+            and contribute directly to reshaping the future of healthcare. Together, let's make a significant impact with
+            TD Therapy Alliance.
           </Typography>
-          <Typography style={{ fontFamily: "Lucida Calligraphy", position: isMobile ? '' : 'absolute', p: '0' }}>
+          <Typography style={{ fontFamily: "Lucida Calligraphy", }}>
             "Beyond Recovery, Towards Optimal Health: Our Vision For Therapy"
           </Typography>
         </Grid>
@@ -40,7 +41,7 @@ export default function HandshakeQuote() {
     </Box>
   )
 }
-
+// position: isMobile ? '' : 'absolute',
 // <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
 // <Typography style={{ fontFamily: "Lucida Calligraphy", }}>
 //   "Beyond Recovery, Towards Optimal Health: Our Vision For Therapy"

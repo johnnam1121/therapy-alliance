@@ -3,6 +3,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Box, Grid, Typography, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PersonIcon from '@mui/icons-material/Person';
 
 export default function Footer() {
   const isMobile = useMediaQuery('(max-width:768px)');
@@ -12,6 +14,7 @@ export default function Footer() {
     textAlign: 'center',
     color: '#eeeeee',
     margin: '1vh',
+    textDecoration: 'none',
     '&:hover': {
       color: '#f36523',
       scale: '1.10',
@@ -97,9 +100,9 @@ export default function Footer() {
             Social Media
           </Typography>
           <Box sx={menuText}>
-            <Link to='https://www.instagram.com/tdtherapyalliance/' target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={iconStyles} /></Link>
-            <Link to='https://www.instagram.com/tdtherapyalliance/' target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={iconStyles} /></Link>
-            <Link to='https://www.instagram.com/tdtherapyalliance/' target="_blank" rel="noopener noreferrer"><InstagramIcon sx={iconStyles} /></Link>
+            <Link to='https://www.indeed.com/cmp/td-therapy-alliance/about/' target="_blank" rel="noopener noreferrer"><PersonIcon sx={iconStyles} /></Link>
+            <Link to='https://www.twitter.com/tdtherapyally/' target="_blank" rel="noopener noreferrer"><TwitterIcon sx={iconStyles} /></Link>
+            <Link to='https://www.linkedin.com/in/tdtherapyalliance/' target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={iconStyles} /></Link>
             <Link to='https://www.instagram.com/tdtherapyalliance/' target="_blank" rel="noopener noreferrer"><InstagramIcon sx={iconStyles} /></Link>
           </Box>
           {/* <Typography variant='h4' sx={menuTitles}>

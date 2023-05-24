@@ -19,14 +19,14 @@ export default function MeetTheTeam() {
   }
 
   const imgStyles = {
-    height: isMobile ? '50vh' : '60vh',
+    height: isMobile ? '45vh' : '60vh',
     width: isMobile ? '70vw' : '25vw',
     borderRadius: '10%'
   }
 
   return (
     <Box>{isMobile ? (
-      <Grid container spacing={3} sx={{ backgroundColor: 'primary.dark', px: isMobile ? '10vw' : '15vw', }}>
+      <Grid container spacing={3} sx={{ backgroundColor: 'primary.light', px: isMobile ? '10vw' : '15vw', }}>
         <Grid item xs={12} md={12} sx={{ mt: '5vh' }}>
           <Typography variant='h3'>
             Meet The Team
@@ -42,7 +42,7 @@ export default function MeetTheTeam() {
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
                   <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
-                  <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+                  {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
                 </Box>
               </div>
               <div>
@@ -52,17 +52,7 @@ export default function MeetTheTeam() {
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
                   <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
-                  <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
-                </Box>
-              </div>
-              <div>
-                <Box sx={{ textAlign: 'center' }}>
-                  <img src={Tony} alt='Tony Pic' style={imgStyles} />
-                </Box>
-                <Box sx={{ textAlign: 'center', mt: 2 }}>
-                  <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-                  <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
-                  <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+                  {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
                 </Box>
               </div>
             </Carousel>
@@ -70,7 +60,7 @@ export default function MeetTheTeam() {
         </Grid>
       </Grid>
     ) : (
-      <Grid container spacing={3} sx={{ backgroundColor: 'primary.dark', px: isMobile ? '10vw' : '15vw', }}>
+      <Grid container spacing={3} sx={{ backgroundColor: 'primary.light', px: isMobile ? '10vw' : '15vw', }}>
         <Grid item xs={12} md={12} sx={{ mt: '5vh' }}>
           <Typography variant='h3'>
             Meet The Team
@@ -84,7 +74,7 @@ export default function MeetTheTeam() {
             <Box sx={{ textAlign: 'center', mt: 2 }}>
               <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
               <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
-              <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+              {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
             </Box>
           </Paper>
         </Grid>
@@ -96,7 +86,7 @@ export default function MeetTheTeam() {
             <Box sx={{ textAlign: 'center', mt: 2 }}>
               <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
               <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
-              <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+              {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
             </Box>
           </Paper>
         </Grid>

@@ -1,15 +1,15 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material';
-import ReasonOne from '../../pictures/ReasonOne.png';
-import ReasonTwo from '../../pictures/ReasonTwo.png';
-import ReasonThree from '../../pictures/ReasonThree.png';
 import { Link } from 'react-router-dom';
+import ReasonOne from '../../pictures/ReasonOne.png';
+import ReasonThree from '../../pictures/ReasonThree.png';
+import ReasonTwo from '../../pictures/ReasonTwo.png';
 
 export default function WhyChooseUs() {
   const isMobile = useMediaQuery('(max-width:768px)');
 
   const whyChooseUs = { textAlign: 'center', minHeight: '45vh', alignItems: 'center', boxShadow: '0 4px 8px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15)', };
   const textStyles = { textAlign: 'center', fontWeight: 'bold', mb: '5vh', px: isMobile ? '8vw' : '3vw' }
-  const imgRow = { textAlign: 'center', px: '7vw', py: '10vh', }
+  const imgRow = { textAlign: 'center', px: '7vw', py: '5vh', }
   const imgStyles = {
     height: isMobile ? '20vh' : '15vh',
     width: isMobile ? '' : '10vw',
@@ -17,7 +17,14 @@ export default function WhyChooseUs() {
     borderRadius: '50%',
     marginTop: isMobile ? '5vh' : 0
   }
-  const buttonStyles = { color: '#ffffff', backgroundColor: '#00a99d', '&:hover': { backgroundColor: '#f36523' }, fontSize: isMobile ? '3vw' : '1.25vw', mb: '5vh', mt: isMobile ? '3vh' : 0 }
+  const buttonStyles = {
+    color: '#ffffff',
+    backgroundColor: '#00a99d',
+    '&:hover': { backgroundColor: '#f36523' },
+    fontSize: isMobile ? '4vw' : '1.25vw',
+    mb: '5vh',
+  }
+
   const backgroundPhoto = require('../../pictures/therapyStock.jpeg');
   const background = {
     position: 'relative',
@@ -64,21 +71,20 @@ export default function WhyChooseUs() {
           <Grid item xs={12} md={4}>
             <img src={ReasonTwo} alt='Training Program' style={imgStyles} />
             <Typography variant='h4' sx={{ mb: '2vh' }}>
-              Training Program
+              Dedicated Staff
             </Typography>
             <Typography variant='body 1'>
-              Our training programs are implemented in order to provide the necessary resources for our therapists to
-              strive in their profession. We provide year-round support to ensure our therapists are constantly improving.
+              Our reliable team members are committed to customer responsiveness and submit notes in a well timed manner.
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <img src={ReasonThree} alt='Developed Therapist' style={imgStyles} />
             <Typography variant='h4' sx={{ mb: '2vh' }}>
-              Developed Therapist
+              Training Program
             </Typography>
             <Typography variant='body 1'>
-              Our highly trained and qualified therapists are specialized in numerous fields to meet your unique needs.
-              We pride ourselves on being able to deliver comprehensive medical knowledge in a diverse selection of languages.
+              Our training programs are implemented in order to provide the necessary resources for our therapists to
+              strive in their profession. We provide year-round support to ensure our therapists are constantly improving.
             </Typography>
           </Grid>
         </Grid>
@@ -87,95 +93,3 @@ export default function WhyChooseUs() {
     </Box>
   );
 }
-
-
-
-
-// import { useMediaQuery, Box, Button, CssBaseline, IconButton, Menu, Paper, Grid, MenuItem, Toolbar, Typography } from '@mui/material';
-// import stock from '../../pictures/stockimg.jpg'
-
-// export default function WhyChooseUs() {
-//   const isMobile = useMediaQuery('(max-width:768px)');
-
-//   const whyChooseUs = {
-//     textAlign: 'center',
-//     minHeight: '45vh',
-//     alignItems: 'center',
-//     boxShadow: '0 4px 8px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.15)',
-//   };
-//   const imgRow = { textAlign: 'center', px: '7vw', alignItems: 'center', minHeight:'70vh' }
-//   const buttonStyles = { color: '#ffffff', backgroundColor: '#00a99d', '&:hover': { backgroundColor: '#f36523' }, fontSize: '1.25vw', mb:'5vh' }
-//   const backgroundPhoto = require('../../pictures/therapyStock.jpeg');
-//   const background = {
-//     position: 'relative',
-//     padding: 0,
-//     overflow: 'hidden',
-//     minHeight: '90vh',
-//     background: `url(${backgroundPhoto})`,
-//     backgroundSize: 'cover',
-//     backgroundPosition: 'center',
-//     alignItems: 'center',
-//     display: 'flex',
-//     width: '100%',
-//     zIndex: 0
-//   };
-
-//   return (
-//     <Box sx={{ backgroundColor: 'primary.light' }}>
-//       <Box sx={{
-//         flexGrow: 1,
-//         backgroundColor: 'primary.dark',
-//       }}>
-//         <Grid container sx={whyChooseUs} spacing={2}>
-//           <Grid item xs={false} sm={3} />
-//           <Grid item xs={12} sm={6}>
-//             <Typography variant='h1' sx={{ textAlign: 'center', fontWeight: 'bold', mb: '5vh', color: '#333333' }}>
-//               Why Choose Us
-//             </Typography>
-//             <Typography variant='h5' sx={{ textAlign: 'center', fontWeight: 'bold', mb: '5vh' }}>
-//               Here at TD Therapy Alliance, we take pride in developing our staff in order to
-//               provide the best quality services for our patients
-//             </Typography>
-//           </Grid>
-//           <Grid item xs={false} sm={3} />
-//         </Grid>
-//       </Box>
-
-//       <Box>
-//         <Grid container sx={imgRow} spacing={5}>
-//           <Grid item xs={4} md={4}>
-//             <img src={stock} alt='stock image' style={{ height: '15vh', marginBottom: '3vh', borderRadius: '50%' }} />
-//             <Typography variant='h3' sx={{ mb: '2vh' }}>
-//               Developed Therapist
-//             </Typography>
-//             <Typography variant='body 1'>
-//               Our highly trained and qualified therapists are specialized in numerous fields to meet your unique needs.
-//               We pride ourselves on being able to deliver comprehensive medical knowledge in a diverse selection of languages.
-//             </Typography>
-//           </Grid>
-//           <Grid item xs={4} md={4}>
-//             <img src={stock} alt='stock image' style={{ height: '15vh', marginBottom: '3vh', borderRadius: '50%' }} />
-//             <Typography variant='h3' sx={{ mb: '2vh' }}>
-//               Developed Therapist
-//             </Typography>
-//             <Typography variant='body 1'>
-//               Our highly trained and qualified therapists are specialized in numerous fields to meet your unique needs.
-//               We pride ourselves on being able to deliver comprehensive medical knowledge in a diverse selection of languages.
-//             </Typography>
-//           </Grid>
-//           <Grid item xs={4} md={4}>
-//             <img src={stock} alt='stock image' style={{ height: '15vh', marginBottom: '3vh', borderRadius: '50%' }} />
-//             <Typography variant='h3' sx={{ mb: '2vh' }}>
-//               Developed Therapist
-//             </Typography>
-//             <Typography variant='body 1'>
-//               Our highly trained and qualified therapists are specialized in numerous fields to meet your unique needs.
-//               We pride ourselves on being able to deliver comprehensive medical knowledge in a diverse selection of languages.
-//             </Typography>
-//           </Grid>
-//         </Grid>
-//       </Box>
-//       <Box sx={{ display: 'flex', justifyContent: 'center',}}><Button sx={buttonStyles}>See More</Button></Box>
-//     </Box>
-//   );
-// }

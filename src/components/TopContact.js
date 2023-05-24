@@ -1,10 +1,12 @@
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import { Box, CssBaseline, Grid, IconButton, Typography, useMediaQuery } from '@mui/material';
+import { Box, CssBaseline, Grid, IconButton, Typography, useMediaQuery, SvgIcon } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PersonIcon from '@mui/icons-material/Person';
 
 export default function TopContact() {
 
@@ -32,14 +34,17 @@ export default function TopContact() {
       <CssBaseline />
       <Grid container alignItems="center" justifyContent="flex-end">
         <Grid item xs={6} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
-          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.instagram.com/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
+          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.indeed.com/cmp/td-therapy-alliance/about/" target="_blank" rel="noopener noreferrer" >
+            <PersonIcon sx={iconStyles} />
+          </IconButton>
+          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.twitter.com/tdtherapyally/" target="_blank" rel="noopener noreferrer" >
+            <TwitterIcon sx={iconStyles} />
+          </IconButton>
+          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.linkedin.com/in/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
             <LinkedInIcon sx={iconStyles} />
           </IconButton>
           <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.instagram.com/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
             <InstagramIcon sx={iconStyles} />
-          </IconButton>
-          <IconButton edge="start" color='inherit' aria-label="menu" component={Link} to="https://www.instagram.com/tdtherapyalliance/" target="_blank" rel="noopener noreferrer" >
-            <LinkedInIcon sx={iconStyles} />
           </IconButton>
         </Grid>
         <Grid item xs={6} sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
@@ -48,7 +53,7 @@ export default function TopContact() {
               <EmailIcon sx={iconStyles} />
             </IconButton>
             <Box sx={{ mr: '1vw', display: { xs: "none", sm: "block" } }}>
-              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='mailto: admin@tdtherapyalliance.com' target="_blank" rel="noopener noreferrer" >
+              <Typography variant='body1' sx={{ color: '#eeeeee', textDecoration: 'none' }} component={Link} to='mailto: admin@tdtherapyalliance.com' target="_blank" rel="noopener noreferrer" >
                 admin@tdtherapyalliance.com
               </Typography>
             </Box>
@@ -56,7 +61,7 @@ export default function TopContact() {
               <LocalPhoneIcon sx={iconStyles} />
             </IconButton>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              <Typography variant='body1' sx={{ color: '#eeeeee' }} component={Link} to='tel::+7138382256' target="_blank" rel="noopener noreferrer" >
+              <Typography variant='body1' sx={{ color: '#eeeeee', textDecoration: 'none' }} component={Link} to='tel::+7138382256' target="_blank" rel="noopener noreferrer" >
                 (713) 838-2256
               </Typography>
             </Box>

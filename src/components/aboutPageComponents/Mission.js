@@ -15,7 +15,7 @@ export default function Mission() {
 
   return (
     <Box>
-      <Grid container sx={{ backgroundColor: 'primary.light', px: '15vw' }}>
+      <Grid container sx={{ backgroundColor: 'primary.dark', px: '15vw' }}>
         <Grid item xs={12} md={12} sx={{ mb: '5vh', mt: '10vh' }}>
           <Typography variant='h3'>
             Who Are We
