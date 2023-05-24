@@ -42,7 +42,7 @@ export default function MeetTheTeam() {
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
                   <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
-                  <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+                  {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
                 </Box>
               </div>
               <div>
@@ -52,17 +52,7 @@ export default function MeetTheTeam() {
                 <Box sx={{ textAlign: 'center', mt: 2 }}>
                   <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
                   <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
-                  <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
-                </Box>
-              </div>
-              <div>
-                <Box sx={{ textAlign: 'center' }}>
-                  <img src={Tony} alt='Tony Pic' style={imgStyles} />
-                </Box>
-                <Box sx={{ textAlign: 'center', mt: 2 }}>
-                  <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
-                  <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
-                  <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+                  {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
                 </Box>
               </div>
             </Carousel>
@@ -84,7 +74,7 @@ export default function MeetTheTeam() {
             <Box sx={{ textAlign: 'center', mt: 2 }}>
               <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
               <Typography sx={{ color: '#00a99d' }} variant='h6'>Tony Tran</Typography>
-              <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+              {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
             </Box>
           </Paper>
         </Grid>
@@ -96,7 +86,7 @@ export default function MeetTheTeam() {
             <Box sx={{ textAlign: 'center', mt: 2 }}>
               <Typography sx={{ color: '#777777' }} variant='h5'>CEO, Co-Founder</Typography>
               <Typography sx={{ color: '#00a99d' }} variant='h6'>David Nguyen</Typography>
-              <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography>
+              {/* <Typography sx={{ mb: '3vh' }} variant='body1'>Some text we plan on adding later</Typography> */}
             </Box>
           </Paper>
         </Grid>

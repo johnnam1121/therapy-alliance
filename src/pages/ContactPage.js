@@ -8,22 +8,6 @@ import Topbar from '../components/Topbar';
 import ContactForm from '../components/contactPageComponents/ContactForm';
 import ContactLanding from '../components/contactPageComponents/ContactLanding';
 
-// #00a693 (a dark greenish-blue)
-// #45b1e8 (a bright sky blue)
-// #ff9900 (a bold orange)
-// #ff4d4d (a vibrant red)
-
-// Light Gray (#F5F5F5) 
-// Beige (#F5F5DC)
-// Light Blue (#E6F3F7) 
-
-// original colors
-// 00a99d (PANTONE 3272)  // greenish
-// f36523 (PANTONE 171)   // orange
-// f70809 (PANTONE 485)   // red
-// 3fa9f5 (PANTONE 279 C) // blue
-
-
 const theme = createTheme({
   palette: {
     primary: {
